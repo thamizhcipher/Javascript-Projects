@@ -1,0 +1,141 @@
+*{
+    margin :0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image: linear-gradient(270deg,#cb9dfc,#993250);
+    color: white;
+    font-family: "Baloo Tammudu 2",sans-serif;
+    font-weight: 700;
+    min-height: 500vh;
+}
+
+header,form{
+    font-size: 1.3em;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,form button{
+    padding: 0.5rem;
+    border:solid rgb(250, 247, 203) 1.5px;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    background: white;
+}
+
+form button{
+    color: rgb(56, 155, 248);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover{
+    background: rgb(56, 155, 248);
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    border-radius: 7px ;
+    height: 10px;
+}
+
+.todoItems{
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.70rem;
+    align-items: center;
+    margin: 10px;
+    list-style: none;
+    padding: 0rem 0.5rem;
+    height: 50px;
+    transition: all 0.5s ease;
+}
+
+.todo-li{
+    flex: 1;
+    font-size: 1em;
+    justify-content: flex-start;
+   
+   
+}
+
+.trash-btn,.complete-btn{
+    background: #e31b22;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.fa-trash,.fa-check{ /*we used fa class bcoz pointer is a base event so we can't modify it by our class which is given later*/
+    pointer-events: none;
+}
+
+.complete-btn{
+    background: green;
+}
+
+.todo-text{
+    margin:5px;
+   
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+
+
+.select select{
+    color: rgb(243, 134, 10);
+    padding: 0.6rem;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    margin-left: 990px;
+    outline: none;
+    /* -webkit-appearance:button; */
+    /* pointer-events: none; */
+
+    
+}
+
+/* .select::before{
+    content: '\f13a';
+    position: absolute;
+    left: 70rem;
+    right: 0;
+    width: 50px;
+    height: 45px;
+    background-color: white; */
+        
+    
+
+
+#alert{
+    font-size: 30px;
+    text-align: center;
+    color: #08ff35;
+}
