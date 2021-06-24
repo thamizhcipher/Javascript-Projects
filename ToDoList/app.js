@@ -53,10 +53,6 @@ trashButton.innerHTML='<i class="fas fa-trash"></i>';
 trashButton.classList.add('trash-btn');
 todoDiv.appendChild(trashButton);
 
-//check for nonempty taks
-
-
-
 
 // append to ul list
 

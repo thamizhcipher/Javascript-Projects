@@ -51,3 +51,20 @@ li a{
  font-weight: bold;
 }
 
+
+.toolTip-text{
+     visibility: hidden;
+     position: relative;
+     width: 120px;
+     background-color: 	#303030;
+     color: #fff;
+     padding: 3px 2px;
+     text-align: center;
+     top: 20px;
+     left: 40px;
+     margin-left: -60px;
+}
+
+.toolTip:hover + .toolTip-text{
+    visibility: visible;
+}
